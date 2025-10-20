@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="page_title">KOMATSU TH - Cybersecurity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #003366, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .lang-btn {
+            @apply text-blue-100 transition-colors duration-200;
+        }
+        .lang-btn.active {
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .nav-link {
+            @apply text-blue-100 hover:text-white transition-colors duration-200 font-medium;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Welcome Section (Home) -->
+    <section id="home" class="flex items-center justify-center min-h-screen bg-gray-50">
+        <div class="text-center p-8">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Komatsu_company_logos.svg/640px-Komatsu_company_logos.svg.png" alt="Komatsu Logo" class="h-12 mx-auto mb-8">
+            <h1 class="text-4xl md:text-5xl font-black mb-4 gradient-text" data-translate-key="welcome_title">Welcome to Security Training</h1>
+            <p class="text-xl text-gray-600 mb-12" data-translate-key="welcome_subtitle">Please select your language to begin.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="welcome-lang-btn bg-[#003366] hover:bg-[#002a53] text-white font-bold py-4 px-10 rounded-full transition-transform transform hover:scale-105 text-lg" data-lang="th">ภาษาไทย</button>
+                <button class="welcome-lang-btn bg-[#003366] hover:bg-[#002a53] text-white font-bold py-4 px-10 rounded-full transition-transform transform hover:scale-105 text-lg" data-lang="en">English</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <div id="main-content" style="display: none;">
+        <!-- Header -->
+        <header class="bg-[#003366] text-white sticky top-0 z-50 shadow-md">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <img src="https://logodix.com/logo/951870.jpg" alt="Komatsu Logo" class="h-9">
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#pre-test" class="nav-link" data-translate-key="nav_phishing">Phishing Mail</a>
+                        <a href="https://bangkokkomatsu24-debug.github.io/bkcsecurity.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link" data-translate-key="nav_cybersecurity">CyberSecurity</a>
+                    </div>
+                    <div class="flex items-center space-x-2 text-sm">
+                        <button id="lang-th" class="lang-btn px-3 py-1 rounded-md" data-lang="th">TH</button>
+                        <span class="text-blue-300">|</span>
+                        <button id="lang-en" class="lang-btn px-3 py-1 rounded-md" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="space-y-24">
+
+                <!-- Section 1: Pre-Test -->
+                <section id="pre-test" class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-2 gradient-text" data-translate-key="pre_test_title">แบบทดสอบก่อนเรียน</h2>
+                    <p class="text-lg text-gray-600 mb-8" data-translate-key="pre_test_subtitle">มาวัดความรู้พื้นฐานของคุณกันก่อนเริ่มบทเรียน</p>
+                    <div class="bg-white rounded-xl shadow-lg p-4 max-w-4xl mx-auto border border-gray-200">
+                        <div class="relative" style="padding-top: 75%;">
+                            <iframe id="pre-test-iframe" class="absolute top-0 left-0 w-full h-full" src="" frameborder="0" marginwidth="0" marginheight="0" style="border: none;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                        </div>
+                    </div>
+                    <a href="#lesson" class="mt-8 inline-block bg-[#003366] hover:bg-[#002a53] text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105" data-translate-key="start_lesson_btn">
+                        เริ่มบทเรียน
+                    </a>
+                </section>
+
+                <!-- Section 2: Learning Content -->
+                <section id="lesson">
+                    <div class="text-center">
+                        <h2 class="text-3xl md:text-4xl font-black mb-2 gradient-text" data-translate-key="lesson_title">เนื้อหาบทเรียน</h2>
+                        <p class="text-lg text-gray-600 mb-8" data-translate-key="lesson_subtitle">ศึกษาเนื้อหาจากสไลด์ด้านล่างนี้ได้เลย</p>
+                    </div>
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 4px 12px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                        <iframe id="lesson-iframe" loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="" allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                    <div class="text-center mt-8">
+                        <a href="#post-test" class="inline-block bg-[#003366] hover:bg-[#002a53] text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105" data-translate-key="goto_post_test_btn">
+                            ไปทำแบบทดสอบหลังเรียน
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Section 3: Post-Test -->
+                <section id="post-test" class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-2 gradient-text" data-translate-key="post_test_title">แบบทดสอบหลังเรียน</h2>
+                    <p class="text-lg text-gray-600 mb-8" data-translate-key="post_test_subtitle">เมื่อเรียนจบแล้ว มาทดสอบความเข้าใจของคุณอีกครั้ง</p>
+                    <div class="bg-white rounded-xl shadow-lg p-4 max-w-4xl mx-auto border border-gray-200">
+                        <div class="relative" style="padding-top: 75%;">
+                           <iframe id="post-test-iframe" class="absolute top-0 left-0 w-full h-full" src="" frameborder="0" marginwidth="0" marginheight="0" style="border: none;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                        </div>
+                    </div>
+                    <a href="#conclusion" class="mt-8 inline-block bg-[#003366] hover:bg-[#002a53] text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105" data-translate-key="finish_btn">
+                        เสร็จสิ้นการอบรม
+                    </a>
+                </section>
+
+                <!-- Section 4: Conclusion -->
+                <section id="conclusion" class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-2 gradient-text" data-translate-key="conclusion_title">ยอดเยี่ยม! คุณเรียนจบหลักสูตรแล้ว</h2>
+                    <p class="text-lg text-gray-600 mb-12" data-translate-key="conclusion_subtitle">นี่คือสิ่งสำคัญที่สุดที่ต้องจำ เมื่อพบอีเมลต้องสงสัย:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                        <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg">
+                            <svg class="h-12 w-12 mx-auto text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-yellow-600 mb-2" data-translate-key="action1_title">ห้ามคลิก!</h3>
+                            <p class="text-gray-600" data-translate-key="action1_desc">อย่าคลิกลิงก์หรือเปิดไฟล์แนบที่ไม่น่าไว้วางใจเด็ดขาด</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg">
+                            <svg class="h-12 w-12 mx-auto text-red-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-red-600 mb-2" data-translate-key="action2_title">ห้ามตอบ!</h3>
+                            <p class="text-gray-600" data-translate-key="action2_desc">การตอบกลับเป็นการยืนยันว่าอีเมลของคุณมีอยู่จริง</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg">
+                             <svg class="h-12 w-12 mx-auto text-green-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-green-600 mb-2" data-translate-key="action3_title">แจ้ง ICT ทันที!</h3>
+                            <p class="text-gray-600" data-translate-key="action3_desc">ส่งต่ออีเมลต้องสงสัยให้แผนก ICT ตรวจสอบโดยเร็วที่สุด</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        
+        <footer class="text-center py-8 mt-16 border-t border-gray-200">
+            <p class="text-gray-500" data-translate-key="footer_text">&copy; Bangkok Komatsu (Thailand). All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const translations = {
+                en: {
+                    page_title: "Phishing 101 - Awareness Training",
+                    welcome_title: "Welcome to Security Training",
+                    welcome_subtitle: "Please select your language to begin.",
+                    nav_phishing: "Phishing Mail",
+                    nav_cybersecurity: "CyberSecurity",
+                    pre_test_title: "Pre-Training Test",
+                    pre_test_subtitle: "Let's measure your baseline knowledge before we begin.",
+                    start_lesson_btn: "Start Lesson",
+                    lesson_title: "Learning Content",
+                    lesson_subtitle: "Please study the material from the slides below.",
+                    goto_post_test_btn: "Go to Post-Training Test",
+                    post_test_title: "Post-Training Test",
+                    post_test_subtitle: "Now that you've finished, let's test your understanding again.",
+                    finish_btn: "Finish Training",
+                    conclusion_title: "Excellent! You've Completed the Course.",
+                    conclusion_subtitle: "Here are the most important things to remember when you encounter a suspicious email:",
+                    action1_title: "Don't Click!",
+                    action1_desc: "Never click on suspicious links or open untrusted attachments.",
+                    action2_title: "Don't Reply!",
+                    action2_desc: "Replying confirms to scammers that your email address is active.",
+                    action3_title: "Report to ICT!",
+                    action3_desc: "Forward the suspicious email to the ICT department for review immediately.",
+                    footer_text: "© Bangkok Komatsu (Thailand). All rights reserved."
+                },
+                th: {
+                    page_title: "Phishing 101 - การอบรมเพื่อสร้างความตระหนักรู้",
+                    welcome_title: "ยินดีต้อนรับสู่การอบรมด้านความปลอดภัย",
+                    welcome_subtitle: "กรุณาเลือกภาษาเพื่อเริ่มต้น",
+                    nav_phishing: "หลักสูตรฟิชชิ่งเมล",
+                    nav_cybersecurity: "หลักสูตรความปลอดภัยทางไซเบอร์",
+                    pre_test_title: "แบบทดสอบก่อนเรียน",
+                    pre_test_subtitle: "มาวัดความรู้พื้นฐานของคุณกันก่อนเริ่มบทเรียน",
+                    start_lesson_btn: "เริ่มบทเรียน",
+                    lesson_title: "เนื้อหาบทเรียน",
+                    lesson_subtitle: "ศึกษาเนื้อหาจากสไลด์ด้านล่างนี้ได้เลย",
+                    goto_post_test_btn: "ไปทำแบบทดสอบหลังเรียน",
+                    post_test_title: "แบบทดสอบหลังเรียน",
+                    post_test_subtitle: "เมื่อเรียนจบแล้ว มาทดสอบความเข้าใจของคุณอีกครั้ง",
+                    finish_btn: "เสร็จสิ้นการอบรม",
+                    conclusion_title: "ยอดเยี่ยม! คุณเรียนจบหลักสูตรแล้ว",
+                    conclusion_subtitle: "นี่คือสิ่งสำคัญที่สุดที่ต้องจำ เมื่อพบอีเมลต้องสงสัย:",
+                    action1_title: "ห้ามคลิก!",
+                    action1_desc: "อย่าคลิกลิงก์หรือเปิดไฟล์แนบที่ไม่น่าไว้วางใจเด็ดขาด",
+                    action2_title: "ห้ามตอบ!",
+                    action2_desc: "การตอบกลับเป็นการยืนยันว่าอีเมลของคุณมีอยู่จริง",
+                    action3_title: "แจ้ง ICT ทันที!",
+                    action3_desc: "ส่งต่ออีเมลต้องสงสัยให้แผนก ICT ตรวจสอบโดยเร็วที่สุด",
+                    footer_text: "© Bangkok Komatsu (Thailand). All rights reserved."
+                }
+            };
+
+            const contentSources = {
+                th: {
+                    preTest: "https://forms.office.com/Pages/ResponsePage.aspx?id=iIa-WCVmUk6A2MF_Oprgihl_jG_LQzJJv-AWqVMBK8NURURRTllEOTNWOFlUWkcxUE1UR0g0NkYyUC4u&embed=true",
+                    lesson: "https://www.canva.com/design/DAGt8xYi6wM/lq6CWrQ-daawbKbkIq_SYw/view?embed",
+                    postTest: "https://forms.office.com/Pages/ResponsePage.aspx?id=iIa-WCVmUk6A2MF_Oprgihl_jG_LQzJJv-AWqVMBK8NUMFZJWEIyNkYwWFU1WVk3TVpHRDBOMFRJMy4u&embed=true"
+                },
+                en: {
+                    preTest: "https://forms.office.com/Pages/ResponsePage.aspx?id=iIa-WCVmUk6A2MF_Oprgihl_jG_LQzJJv-AWqVMBK8NUNDBPSEhETDM2VjFORVYyQ1hHTktaS1BRMi4u&embed=true",
+                    lesson: "https://www.canva.com/design/DAGvRFLsVis/nVKZyxljTDZg4Y1JgoX_mA/view?embed",
+                    postTest: "https://forms.office.com/Pages/ResponsePage.aspx?id=iIa-WCVmUk6A2MF_Oprgihl_jG_LQzJJv-AWqVMBK8NUNEdOMU9TWkJQQTAxM1gzV1BWQkxOMTVMMS4u&embed=true"
+                }
+            };
+
+            const homeSection = document.getElementById('home');
+            const mainContent = document.getElementById('main-content');
+            const welcomeLangButtons = document.querySelectorAll('.welcome-lang-btn');
+            const header = document.querySelector('header');
+            const langButtons = document.querySelectorAll('.lang-btn');
+            
+            function changeLanguage(lang) {
+                document.documentElement.lang = lang;
+                
+                document.querySelectorAll('[data-translate-key]').forEach(el => {
+                    const key = el.getAttribute('data-translate-key');
+                    if (translations[lang] && translations[lang][key]) {
+                        el.innerHTML = translations[lang][key];
+                    }
+                });
+
+                const sources = contentSources[lang];
+                if (sources) {
+                    document.getElementById('pre-test-iframe').src = sources.preTest;
+                    document.getElementById('lesson-iframe').src = sources.lesson;
+                    document.getElementById('post-test-iframe').src = sources.postTest;
+                }
+
+                langButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.lang === lang);
+                });
+            }
+            
+            function startTraining(lang) {
+                changeLanguage(lang);
+                homeSection.style.display = 'none';
+                mainContent.style.display = 'block';
+                header.style.display = 'block';
+                setTimeout(updateActiveNav, 100); 
+            }
+
+            welcomeLangButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    startTraining(e.target.dataset.lang);
+                });
+            });
+
+            langButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    changeLanguage(e.target.dataset.lang);
+                });
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // --- Active Nav Link on Scroll ---
+            const phishingNavLink = document.querySelector('a[href="#pre-test"]');
+            const phishingSections = document.querySelectorAll('#pre-test, #lesson, #post-test, #conclusion');
+
+            function updateActiveNav() {
+                let inPhishingSection = false;
+                phishingSections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    // Check if the section is currently visible in the middle of the viewport
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        inPhishingSection = true;
+                    }
+                });
+                
+                if (inPhishingSection) {
+                    phishingNavLink.classList.add('font-bold', 'text-white');
+                } else {
+                    phishingNavLink.classList.remove('font-bold', 'text-white');
+                }
+            }
+
+            window.addEventListener('scroll', updateActiveNav);
+            window.addEventListener('resize', updateActiveNav);
+
+        });
+    </script>
+</body>
+</html>
+
