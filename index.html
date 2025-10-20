@@ -56,7 +56,7 @@
                         <img src="https://logodix.com/logo/951870.jpg" alt="Komatsu Logo" class="h-9">
                     </div>
                     <div class="hidden md:flex items-center space-x-8">
-                        <a href="#lesson" class="nav-link" data-translate-key="nav_phishing">Phishing Mail</a>
+                        <a href="#pre-test" class="nav-link" data-translate-key="nav_phishing">Phishing Mail</a>
                         <a href="https://bangkokkomatsu24-debug.github.io/bkcsecurity.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link" data-translate-key="nav_cybersecurity">CyberSecurity</a>
                     </div>
                     <div class="flex items-center space-x-2 text-sm">
@@ -72,6 +72,22 @@
         <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="space-y-24">
 
+                <!-- Section 1: Pre-Test -->
+                <section id="pre-test" class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-2 gradient-text" data-translate-key="pre_test_title">แบบทดสอบก่อนเรียน</h2>
+                    <p class="text-lg text-gray-600 mb-8" data-translate-key="pre_test_subtitle">มาวัดความรู้พื้นฐานของคุณกันก่อนเริ่มบทเรียน</p>
+                    
+                    <a href="https://forms.office.com/r/JE32KBUxNt" target="_blank" rel="noopener noreferrer" class="mb-4 inline-block bg-white hover:bg-gray-100 text-[#003366] font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 border-2 border-[#003366]">
+                        <span data-translate-key="open_pre_test_btn">คลิกเพื่อทำแบบทดสอบก่อนเรียน</span>
+                    </a>
+                
+                    <p class="text-gray-500 mb-8" data-translate-key="pre_test_instruction">เมื่อทำเสร็จแล้ว กลับมาหน้านี้แล้วกด "เริ่มบทเรียน"</p>
+
+                    <a href="#lesson" class="inline-block bg-[#003366] hover:bg-[#002a53] text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105" data-translate-key="start_lesson_btn">
+                        เริ่มบทเรียน
+                    </a>
+                </section>
+
                 <!-- Section 2: Learning Content -->
                 <section id="lesson">
                     <div class="text-center">
@@ -83,7 +99,27 @@
                         src="" allowfullscreen="allowfullscreen" allow="fullscreen">
                         </iframe>
                     </div>
-                 
+                    <div class="text-center mt-8">
+                        <a href="#post-test" class="inline-block bg-[#003366] hover:bg-[#002a53] text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105" data-translate-key="goto_post_test_btn">
+                            ไปทำแบบทดสอบหลังเรียน
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Section 3: Post-Test -->
+                <section id="post-test" class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-2 gradient-text" data-translate-key="post_test_title">แบบทดสอบหลังเรียน</h2>
+                    <p class="text-lg text-gray-600 mb-8" data-translate-key="post_test_subtitle">เมื่อเรียนจบแล้ว มาทดสอบความเข้าใจของคุณอีกครั้ง</p>
+                    
+                    <a href="https://forms.office.com/r/eEYeri1F5T" target="_blank" rel="noopener noreferrer" class="mb-4 inline-block bg-white hover:bg-gray-100 text-[#003366] font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 border-2 border-[#003366]">
+                         <span data-translate-key="open_post_test_btn">คลิกเพื่อทำแบบทดสอบหลังเรียน</span>
+                    </a>
+                
+                    <p class="text-gray-500 mb-8" data-translate-key="post_test_instruction">เมื่อทำเสร็จแล้ว กลับมาหน้านี้แล้วกด "เสร็จสิ้นการอบรม"</p>
+
+                    <a href="#conclusion" class="inline-block bg-[#003366] hover:bg-[#002a53] text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105" data-translate-key="finish_btn">
+                        เสร็จสิ้นการอบรม
+                    </a>
                 </section>
 
                 <!-- Section 4: Conclusion -->
@@ -132,8 +168,18 @@
                     welcome_subtitle: "Please select your language to begin.",
                     nav_phishing: "Phishing Mail",
                     nav_cybersecurity: "CyberSecurity",
+                    pre_test_title: "Pre-Training Test",
+                    pre_test_subtitle: "Let's measure your baseline knowledge before we begin.",
+                    open_pre_test_btn: "Click to Take the Pre-Training Test",
+                    pre_test_instruction: "After you finish, return to this page and click 'Start Lesson'.",
+                    start_lesson_btn: "Start Lesson",
                     lesson_title: "Learning Content",
                     lesson_subtitle: "Please study the material from the slides below.",
+                    goto_post_test_btn: "Go to Post-Training Test",
+                    post_test_title: "Post-Training Test",
+                    post_test_subtitle: "Now that you've finished, let's test your understanding again.",
+                    open_post_test_btn: "Click to Take the Post-Training Test",
+                    post_test_instruction: "After you finish, return to this page and click 'Finish Training'.",
                     finish_btn: "Finish Training",
                     conclusion_title: "Excellent! You've Completed the Course.",
                     conclusion_subtitle: "Here are the most important things to remember when you encounter a suspicious email:",
@@ -151,8 +197,18 @@
                     welcome_subtitle: "กรุณาเลือกภาษาเพื่อเริ่มต้น",
                     nav_phishing: "หลักสูตรฟิชชิ่งเมล",
                     nav_cybersecurity: "หลักสูตรความปลอดภัยทางไซเบอร์",
+                    pre_test_title: "แบบทดสอบก่อนเรียน",
+                    pre_test_subtitle: "มาวัดความรู้พื้นฐานของคุณกันก่อนเริ่มบทเรียน",
+                    open_pre_test_btn: "คลิกเพื่อทำแบบทดสอบก่อนเรียน",
+                    pre_test_instruction: "เมื่อทำเสร็จแล้ว กลับมาหน้านี้แล้วกด 'เริ่มบทเรียน'",
+                    start_lesson_btn: "เริ่มบทเรียน",
                     lesson_title: "เนื้อหาบทเรียน",
                     lesson_subtitle: "ศึกษาเนื้อหาจากสไลด์ด้านล่างนี้ได้เลย",
+                    goto_post_test_btn: "ไปทำแบบทดสอบหลังเรียน",
+                    post_test_title: "แบบทดสอบหลังเรียน",
+                    post_test_subtitle: "เมื่อเรียนจบแล้ว มาทดสอบความเข้าใจของคุณอีกครั้ง",
+                    open_post_test_btn: "คลิกเพื่อทำแบบทดสอบหลังเรียน",
+                    post_test_instruction: "เมื่อทำเสร็จแล้ว กลับมาหน้านี้แล้วกด 'เสร็จสิ้นการอบรม'",
                     finish_btn: "เสร็จสิ้นการอบรม",
                     conclusion_title: "ยอดเยี่ยม! คุณเรียนจบหลักสูตรแล้ว",
                     conclusion_subtitle: "นี่คือสิ่งสำคัญที่สุดที่ต้องจำ เมื่อพบอีเมลต้องสงสัย:",
@@ -232,8 +288,8 @@
             });
 
             // --- Active Nav Link on Scroll ---
-            const phishingNavLink = document.querySelector('a[href="#lesson"]');
-            const phishingSections = document.querySelectorAll('#lesson, #conclusion');
+            const phishingNavLink = document.querySelector('a[href="#pre-test"]');
+            const phishingSections = document.querySelectorAll('#pre-test, #lesson, #post-test, #conclusion');
 
             function updateActiveNav() {
                 let inPhishingSection = false;
